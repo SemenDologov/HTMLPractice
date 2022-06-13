@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Dolgov Semen">
+        <meta name="description" content="Practice with HTML">
+        <link rel="icon" href="..." type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Магазин</title>
+    </head>
+
+    <body>
+        <header>
+            <h1> Страница магазина </h1>
+
+            <hr>
+            
+            <article id="content">
+                <h2 style="text-align: center">Содежание</h2>
+                <nav>
+                    <a href="#about">Описание</a> | <a href="#content">Содержание</a> | <a href="#assortiment">Ассортимент</a> | <a href="#workinghours">Часы работы</a> | <a href="#questions">Вопросы</a> | <a href="#order">Оформление заказа</a>
+                </nav>
+            </article>
+        </header>
+
+        <hr>
+
+        <main>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Ваши данные</legend>
+                    <p>
+                        <label for="firstname">Имя</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Иван" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="lastname">Фамилия</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Иванов" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="phonenumber">Телефон</label>
+                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="88005553535" required>
+                    </p>
+                    <p>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбор товара</legend>
+                    <select name="product" id="product">
+                        <optgroup label="Товары для дома">
+                            <option value="plate">Тарелка</option>
+                            <option value="kot">Кот</option>
+                            <option value="TV">Телек</option>
+                        </optgroup>
+                        <optgroup label="Ставки на спорт">
+                            <option value="ehehehe">Заказной матч</option>
+                            <option value="strategy">Стратегия ставок</option>
+                            <option value="guru">Менторство</option>
+                        </optgroup>
+                        <optgroup label="Морепродукты">
+                            <option value="fish">Рыба</option>
+                            <option value="water">Вода</option>
+                            <option value="titanic">Титаник</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <button type="submit">Заказать</button>
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            <p style="text-align: center">Мой сайт (2022)</p>
+        </footer>
+    </body>
+</html>
